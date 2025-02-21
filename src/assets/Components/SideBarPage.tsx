@@ -40,8 +40,10 @@ const [complainLogImag, setcomplainLogImag] = useState(false)
                     <img src="/Images/icons/users.png" alt=""  /> Users</li>
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardscheme.png" alt=""  /> Card Scheme</li>
-                    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
-                    <img src="/Images/icons/cardprofile.png" alt=""  />Card Profile</li>
+                    
+              <NavLink to="/CardProfile">     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
+                    <img src="/Images/icons/cardprofile.png" alt=""  />Card Profile</li></NavLink> 
+
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardrequest.png" alt=""  /> Card Request</li>
 

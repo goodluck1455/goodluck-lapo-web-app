@@ -147,6 +147,7 @@ export default function Table() {
        
 
       </div>
+      
     <div className="overflow-x-auto">
             <table className="w-full border-collapse rounded-lg border border-gray-300">
   <thead className="bg-[#F9FAFB] rounded-t-lg">
@@ -173,9 +174,7 @@ export default function Table() {
  
   </tbody>
 </table>
-
-
-      
+    
     </div>
 
     <div className="table___headerSearchBarB w-full border border-gray-300">

@@ -23,6 +23,9 @@ interface ComplaintContextType {
 // Create the context
 const ComplaintContext = createContext<ComplaintContextType | undefined>(undefined);
 
+
+
+
 // Sample data
 const ResolveTabledata: TableRow[] = [
     { id: 1, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
