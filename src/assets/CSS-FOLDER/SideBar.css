@@ -1,0 +1,102 @@
+.SideBar___body{
+    width: 270px;
+    border-right: 1px solid #DEDEDF;
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    scrollbar-width: none; 
+
+}
+.SideBar___breakingContainer{
+    width: 300px;
+}
+
+.SideBar____Container{
+    margin: 0rem 0.4rem 0.5rem 0.4rem;
+}
+
+.Sidebar__Logo img{
+   margin-left: 1rem; 
+  padding-top: 1rem;
+}
+
+.Sidebar__dashbaoard{
+    margin-top: 3rem;
+    padding: 8px;
+}
+
+.Sidebar__dashbaoard:hover {
+    /* border: 0.6px solid #AEBAC9; */
+    border-radius: 8px;
+    background: #E4F0FF;
+    color:  #014DAF;
+    
+}
+.Sidebar__dashbaoard img:hover{
+    color:  #014DAF;
+}
+
+.sidebar__listHeading{
+   margin-left: 1rem;
+   margin-top: 2rem;
+}
+.sidebar__list-container{
+    margin-left: 0.5rem;
+
+}
+.sidebar__list-container ul li{
+    margin-top: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+       /* border: 0.6px solid #AEBAC9; */
+}
+
+.sidebar__footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.sidebar__footer img{
+    width: 50%;
+}
+/* .Sidebar__dashbaoard img{
+    margin-top: 5px;
+} */
+
+.hsdjhf{
+/* Menu Item */
+
+font-family: Satoshi;
+font-weight: 500;
+font-size: 8.5px;
+line-height: 18px;
+letter-spacing: 0%;
+
+/* MAIN MENU */
+
+position: absolute;
+width: 49px;
+height: 18px;
+left: 28px;
+top: 157px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 8.5px;
+line-height: 18px;
+/* identical to box height, or 212% */
+
+color: #7E8B9C;
+
+
+
+
+
+
+}
+
+
+

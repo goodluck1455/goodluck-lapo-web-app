@@ -1,0 +1,292 @@
+
+.complaintRe____header-body{
+    /* width: 1210px; */
+    border-bottom: 1px solid #DEE6E2;
+    height: 50px;
+    /* margin-left: 16.5rem;   */
+}
+
+
+.complaint___container{
+    margin: 0rem 1rem 0.5rem 1rem;
+}
+
+
+.complaint___infoLogo, .complaint____bellCont{
+/* margin-top: 10px; */
+
+padding: 8px;
+}
+
+
+.complaint___logTitle{
+border-bottom: 1px solid #98A2B3;
+line-height: 1.7rem;
+padding-bottom: 18px;
+}
+
+
+
+.DeleteOption .Overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+   
+  }
+  .Overlay{
+    background: rgb(100, 100, 100, .4);
+  }
+
+
+
+.complaint__pending{
+    
+    display: flex;
+    justify-content: center;
+    width: 109px;
+    height: 40px; 
+    background: #F9FAFB;
+    border: 1px solid #D0D5DD;
+    margin-top: 1.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.complaint__pendingActive{
+    position: relative;
+}
+
+.complaint__pendingActive::before{
+    content: '•'; 
+    position: absolute;
+    top: -13px;
+    left: 7px; 
+    color: #014DAF;
+    font-size: 40px;
+
+}
+
+.complaint__pending p{
+    margin-left: 10px;
+}
+
+.complaint__pendingB{
+    display: flex;
+    justify-content: center;
+    width: 103px;
+    height: 40px; 
+    background: #F9FAFB;
+    border: 1px solid #D0D5DD;
+    margin-top: 1.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.complaint__tableData{
+    margin-top: 2rem;
+}
+
+table th{
+    border-radius: 50px;
+}
+
+.complaint__LogComplain{
+    margin-top: 1.5rem;
+padding: 8px;
+width: 136px;
+height: 36px;
+background: #014DAF;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.table___headerSearchBar{
+/* width: 1170px; */
+height: auto;
+
+/* Gray/50 */
+background: #F9FAFB;
+
+border-top-left-radius: 10px ;
+border-top-right-radius: 10px ;
+
+
+}
+
+.table___searchBar___container{
+    padding: 8px;
+}
+
+.input__searchBar{
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    width: 320px;
+    height: 36px;
+    padding-left: 2rem;
+    outline: none;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.table___dateSearch{
+    background: #FFFFFF;
+    /* Gray/300 */
+    border: 1px solid #D0D5DD;
+    border-radius: 10px; 
+    width: 82px;
+   height: 36px;
+   padding: 8px 14px;
+}
+
+.searcgBAR__ICON{
+    position: absolute;
+    top: 15.5rem;
+    /* left: 0rem; */
+    padding-left: 13px;
+    /* right: 2rem; */
+    z-index: 999;
+    /* background: #0b3865; */
+    /* bottom: 0; */
+/* margin-right: -8rem;
+position: relative; */
+}
+
+
+.table___headerSearchBarB{
+    /* width: 1170px; */
+    /* height: auto; */
+    background: #F9FAFB;
+    
+    }
+.table___mainContainer{
+    margin-bottom: 12rem;
+    padding-bottom: 10em;
+}
+/* .table___searchBar{
+    margin-top: 10px;
+} */
+/* .complaint__Form___Container{
+    position: absolute;
+    width: 496px;
+    height: 790px;
+    box-sizing: border-box;
+    background: #FFFFFF; 
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+} */
+
+
+
+.complaint__Form___Container{ 
+width: 470px;
+height: auto;
+/* Base/White */
+background: #FFFFFF;
+margin-top: 0.2rem;
+box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+border-radius: 12px;
+  }
+ 
+  .complaine__FormInput{
+    border: 1px solid #D0D5DD;
+    outline: none;
+    width: 420px;
+    height: 44px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+     border-radius: 8px;
+  }
+  .complaine__FormInputTextArea{
+    border: 1px solid #D0D5DD;
+    outline: none;
+    width: 420px;
+    height: 100px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+     border-radius: 8px;
+  }
+
+
+  .form__label{
+    margin-bottom: 10rem;
+  }
+
+  .File__upload{
+    width: 420px;
+     height: 126px;
+    border: 1px dashed #D0D5DD;
+    border-radius: 12px;
+    isolation: isolate; 
+  }
+
+
+.Form__btn{
+    width: 420px;
+    height: 44px;
+    background: #014DAF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 4px;
+}
+
+.bsb{
+
+
+    /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 18px;
+gap: 8px;
+
+width: 448px;
+height: 44px;
+
+background: #014DAF;
+/* Shadow/xs */
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Input */
+
+/* _File upload base */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 24px;
+gap: 4px;
+isolation: isolate;
+
+width: 448px;
+height: 126px;
+
+/* Base/White */
+background: #FFFFFF;
+border: 1px dashed #D0D5DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
