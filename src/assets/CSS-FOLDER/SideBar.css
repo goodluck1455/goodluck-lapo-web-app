@@ -70,21 +70,31 @@
 
 /* Input with label */
 
-/* Input */
-
-/* Frame 1618867973 */
+/* _Button base */
 
 box-sizing: border-box;
 
-position: absolute;
-width: 1170px;
-height: 428px;
-left: 250px;
-top: 133px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 7.83933px 13.7188px;
+gap: 7.84px;
 
-background: #FFFFFF;
-border: 1px solid #E2E2E2;
-border-radius: 10px;
+width: 214px;
+height: 32px;
+
+/* Button/Secondary gray(stroke)[day] */
+border: 0.979916px solid #D0D5DD;
+filter: drop-shadow(0px 0.979916px 1.95983px rgba(16, 24, 40, 0.05));
+border-radius: 97.9916px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
 
 
 

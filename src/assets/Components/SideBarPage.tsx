@@ -17,23 +17,26 @@ const [complainLogImag, setcomplainLogImag] = useState(false)
                 <img src="/Images/Lapo-logo.png" alt="" className="z-20" />
              </div>
 
-
-             <div className="flex gap-3 text-[#D0D5DD] Sidebar__dashbaoard items-center">
+             <NavLink to="/"> 
+             <div className="flex gap-3 text-[#D0D5DD] Sidebar__dashbaoard items-center cursor-pointer">
               <div className="">
               <img src="/Images/dashboarLogo.png" alt="" className="font-bold" /> 
                 </div>  
+               
                 <div>
                     <h2 className="">Dashboard</h2>
                 </div>
              </div>
-
+             </NavLink>
 
              <div className="sidebar__list-container">
                 <h2 className="text-[#7E8B9C] sidebar__listHeading" >MAIN MENU</h2>
                 <ul className="text-[#D0D5DD]">
-                    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
+                  
+                    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF] cursor-pointer"> 
                        <img src="/Images/icons/branch.png" alt=""  /> Branches 
-                        </li>
+                        </li> 
+
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/roles.png" alt=""  /> Roles</li>
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]">
@@ -56,7 +59,7 @@ const [complainLogImag, setcomplainLogImag] = useState(false)
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]">
                     <img src="/Images/icons/generateReissuePin.png" alt=""  /> Generated/Reissue Pin</li>
                 
-                    <NavLink to="/" 
+                    <NavLink to="ComplaintLog" 
                  
                     onMouseEnter={() => setcomplainLogImag(false)}
                     onMouseLeave={() => setcomplainLogImag(true)}

@@ -9,7 +9,7 @@ export default function CreateProfile() {
     <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide ">
 
 
-<section className="bg-white">
+      <section className="bg-white">
         <div className="complaint___container ">
           
           <section className="flex justify-between items-center">
