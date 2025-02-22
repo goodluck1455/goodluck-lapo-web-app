@@ -7,6 +7,7 @@ import ComplaintLog from "./ComplaintLog";
 import ComplaintResolve from "./ComplaintResolve";
 import CardProfile from "./CardProfile";
 import CreateProfile from "./CreateProfile";
+import CardScheme from "./CardScheme";
 // import User from "./User";
 // import Table from "./Table";
 // import { Outlet } from "react-router-dom";
@@ -26,8 +27,9 @@ export default function MainPage() {
           <Route path="complaintResolve" element={ <ComplaintResolve /> } />
           <Route path="CardProfile" element={<CardProfile />} />
           <Route path="CreateProfile" element={<CreateProfile />} />
+          <Route path="CardScheme" element={<CardScheme />} />
           {/* 
-          <Route path="CheckOutPage" element={<CheckOutPage />} />
+          <Route path="CardScheme" element={<CardScheme />} />
           <Route path="/ProductDescription" element={<ProductDescription />} />
           <Route path="*" element={<NotFound /> } /> */}
         </Routes>
