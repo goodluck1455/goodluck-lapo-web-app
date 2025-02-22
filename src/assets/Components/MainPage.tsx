@@ -6,6 +6,7 @@ import ComplaintLog from "./ComplaintLog";
 // import User from "./ComplaintResolve";
 import ComplaintResolve from "./ComplaintResolve";
 import CardProfile from "./CardProfile";
+import CreateProfile from "./CreateProfile";
 // import User from "./User";
 // import Table from "./Table";
 // import { Outlet } from "react-router-dom";
@@ -24,6 +25,7 @@ export default function MainPage() {
           <Route index element={<ComplaintLog />} />
           <Route path="complaintResolve" element={ <ComplaintResolve /> } />
           <Route path="CardProfile" element={<CardProfile />} />
+          <Route path="CreateProfile" element={<CreateProfile />} />
           {/* 
           <Route path="CheckOutPage" element={<CheckOutPage />} />
           <Route path="/ProductDescription" element={<ProductDescription />} />
