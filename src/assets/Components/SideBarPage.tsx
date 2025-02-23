@@ -35,7 +35,7 @@ const showSideBar = ()=>{
               <img src="/Images/dashboarLogo.png" alt="" className="font-bold" /> 
                 </div>  
                
-                <div className="max-sm:hidden">
+                <div className="">
                     <h2 className="">Dashboard</h2>
                 </div>
              </div>

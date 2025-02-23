@@ -93,7 +93,7 @@ export default function Dashboard() {
           <p className="text-[#475467] text-[14px]">Last login: 26/11/2024  14:39:58</p>
         </div>
 
-        <div className="max-sm:mb-2">
+        <div className="max-sm:mb-2 ">
             <div className="Dashboard__date text-[12px] items-center flex gap-2 p-1">
            <span className="flex gap-[5px] items-center">
            <span><img src="/Images/icons/dashboarCalendar.png" alt="" /></span>  <h2 className="font-bold">Today</h2> 
@@ -109,64 +109,19 @@ export default function Dashboard() {
 
           <section>
             <div className="Dashboarb__quickAccess h-[106px] w-full max-sm:h-auto max-sm:pb-2">
-              <h2 className="pt-3 pl-3 font-medium ml-4 max-sm:ml-0.5 max-sm:pl-1">Your Quick Access</h2>
+              <h2 className="pt-3 pl-3 font-medium ml-4 max-sm:ml-0.5 max-sm:pl-1 max-xl:ml-0.5">Your Quick Access</h2>
 
 
 
-              <div className="ml-5 max-sm:ml-1 mt-3 grid grid-cols-4 gap-2.5  mr-5 max-sm:mr-1 max-sm:grid-cols-2 max-sm:gap-3">
+              <div className="ml-5 max-sm:ml-1 max-xl:ml-1 mt-3 grid grid-cols-4 gap-2.5  mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-2 max-sm:gap-3">
                 
-                {/* <div className="Dashboard__quickAccesscard  lg:w-full flex items-center gap-1.5 cursor-pointer">
-                  <span>
-                    <img src="/Images/icons/DasboarMcard.png" alt="" className="ml-4 max-sm:ml-1"/>
-                  </span>
-                  <span className="ml-3 max-sm:ml-1 max-sm:text-[0.9rem]">
-                    <h2>Manage a Card</h2>
-                  </span>
-                  <span>
-                    <img src="/Images/icons/chevron-right.png" alt="" />
-                  </span>
-                </div> */}
-                {/* <QuickAccess /> */}
+              
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Manage a Card"}/>
 
-                {/* <div className="Dashboard__quickAccesscard  flex items-center gap-1.5 cursor-pointer">
-                  <span>
-                    <img src="/Images/icons/DasboarMcard.png" alt="" className="ml-4"/>
-                  </span>
-                  <span className="ml-3">
-                    <h2>Issue Instant Card</h2>
-                  </span>
-                  <span>
-                    <img src="/Images/icons/chevron-right.png" alt="" />
-                  </span>
-                </div> */}
-
-                {/* <div className="Dashboard__quickAccesscard flex items-center gap-1.5 cursor-pointer">
-                  <span>
-                    <img src="/Images/icons/DasboarMcard.png" alt="" className="ml-4"/>
-                  </span>
-                  <span className="ml-3">
-                    <h2>Manage a Card</h2>
-                  </span>
-                  <span>
-                    <img src="/Images/icons/chevron-right.png" alt="" />
-                  </span>
-                </div> */}
-
-                {/* <div className="Dashboard__quickAccesscard flex items-center gap-1.5 cursor-pointer">
-                  <span>
-                    <img src="/Images/icons/DasboarMcard.png" alt="" className="ml-4"/>
-                  </span>
-                  <span className="ml-3">
-                    <h2>Manage a Card</h2>
-                  </span>
-                  <span>
-                    <img src="/Images/icons/chevron-right.png" alt="" />
-                  </span>
-                </div> */}
+                
 
 
               </div>

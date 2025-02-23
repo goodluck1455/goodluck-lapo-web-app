@@ -16,7 +16,7 @@ import Dashboard from "./Dashboard";
 export default function MainPage() {
 
   return (
-    <div>
+    <>
        <div className="flex  ">
       
         <SideBarPage />
@@ -30,17 +30,13 @@ export default function MainPage() {
           <Route path="CreateProfile" element={<CreateProfile />} />
           <Route path="CardScheme" element={<CardScheme />} />
           <Route path="complaintResolve" element={<ComplaintResolve/>} />
-          {/* 
-          <Route path="CardScheme" element={<CardScheme />} />
-          <Route path="/ProductDescription" element={<ProductDescription />} />
-          <Route path="*" element={<NotFound /> } /> */}
         </Routes>
-        {/* <ComplaintResolve /> */}
+      
     
        </div>
       
 
 
-    </div>
+    </>
   )
 }

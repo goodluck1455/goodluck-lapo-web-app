@@ -20,7 +20,7 @@ export default function CreateProfile() {
 
 
   return (
-    <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide ">
+    <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide max-xl:w-full">
 
 
       <section className="bg-white">
@@ -46,7 +46,7 @@ export default function CreateProfile() {
           
           </div>
 
-          <div className="flex gap-7 items-center complaint____bellCont">
+          <div className="flex gap-7 items-center complaint____bellCont max-xl:mr-3">
             <span>
             <img src="/Images/icons/infoBell.png" alt="" />
             </span>
@@ -78,7 +78,7 @@ export default function CreateProfile() {
                 </div>
 
 
-                      <div className="flex gap-10 max-sm:flex-col">
+                      <div className="flex gap-10 max-sm:flex-col max-xl:gap-1">
                 <div>
                   <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
                   <label htmlFor="">Card Name *</label> <br />
