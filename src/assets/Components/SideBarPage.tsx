@@ -1,20 +1,32 @@
 import { useState } from "react"
 import "../CSS-FOLDER/SideBar.css"
 import { NavLink } from "react-router-dom"
-
+import { useComplaintContext } from "./ComplaintContext"
+import { IoMdClose } from "react-icons/io";
 
 export default function SideBarPage() {
 const [complainLogImag, setcomplainLogImag] = useState(false)
+ 
+const {navbar,  setNavbar} = useComplaintContext()
+
+const showSideBar = ()=>{
+
+   setNavbar(!navbar)
+   // setIsOpen(!isOpen);
+}
 
   return (
-   <div className="">
-    <div className="SideBar___body bg-[#002F6C]   top-0 left-0 scroll-smooth overflow-y-auto scrollbar-hide">
+   <div className={`max-[376px]:hidden ${navbar ? "max-sm:block": "max-sm:hidden" } max-sm:absolute  max-xl:z-20 max-sm:delay-300  `} >
+    <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 scroll-smooth overflow-y-auto scrollbar-hide">
            
            <div className=" SideBar____Container ">
 
              
              <div className="Sidebar__Logo ">
-                <img src="/Images/Lapo-logo.png" alt="" className="z-20" />
+                <img src="/Images/Lapo-logo.png" alt="" className="z-20" /> 
+                <IoMdClose 
+                onClick={showSideBar}
+                size={30} className="hidden max-xl:block text-white font-bold absolute top-0.5 right-2.5" />
              </div>
 
              <NavLink to="/"> 
@@ -23,7 +35,7 @@ const [complainLogImag, setcomplainLogImag] = useState(false)
               <img src="/Images/dashboarLogo.png" alt="" className="font-bold" /> 
                 </div>  
                
-                <div>
+                <div className="max-sm:hidden">
                     <h2 className="">Dashboard</h2>
                 </div>
              </div>
@@ -42,7 +54,7 @@ const [complainLogImag, setcomplainLogImag] = useState(false)
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]">
                     <img src="/Images/icons/users.png" alt=""  /> Users</li>
                    
-                   <NavLink to="CardScheme"> <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
+                   <NavLink to="CardScheme" onClick={showSideBar}> <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardscheme.png" alt=""  /> Card Scheme</li></NavLink>
                     
               <NavLink to="/CardProfile">     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 

@@ -1,61 +1,9 @@
 // import { useState } from "react";
 
-// import { useState } from "react";
 
-
-// const PendingTabledata = [
-//   { id: 1, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 2, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 3, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 4, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 5, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 6, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 7, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 8, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 9, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 10, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"}
-// ];
-
-
-// const ResolveTabledata = [
-//   { id: 1, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 2, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 3, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 4, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 5, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 6, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 7, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 8, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 9, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"},
-//   { id: 10, AccountNumber: "0123436789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute"}
-// ];
-
-// interface TableProps {
-//   projectName: string;
-//   projectImage: string;
-// }
 
 import { useComplaintContext } from "./ComplaintContext"
 
-// interface TableProps { 
-//   // ResolveTabledata: TableRow[];
-//   // PendingTabledata: TableRow[];
-//   selectedData: TableRow[];
-//   currentPage:number;
-//   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-// }
-
-
-
-// interface TableRow {
-//   id: number;
-//   AccountNumber: string;
-//   CustomerName: string;
-//   SubmissionDate: string;
-//   Category: string;
-//   status: "Pending" | "Resolved"; 
-//   extraInfo?: string; 
-// }
 
 
 const itemsPerPage = 4;

@@ -1,65 +1,12 @@
 import "../CSS-FOLDER/ComplaintLog.css"
+import "../CSS-FOLDER/Dasboard.css"
 import { useComplaintContext } from "./ComplaintContext";
 import Table from "./Table"
 
 import { useState } from "react";
 
 
-// interface TableRow {
-//   id: number;
-//   AccountNumber: string;
-//   CustomerName: string;
-//   SubmissionDate: string;
-//   Category: string;
-//   status: "Pending" | "Resolved"; 
- 
-// }
 
-
-
-
-
-// const ResolveTabledata: TableRow[] = [
-//   { id: 1, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 2, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 3, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 4, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 5, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 6, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 7, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 8, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 9, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"},
-//   { id: 10, AccountNumber: "0123456789", CustomerName: "Nazeer Ajibola", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Resolved"}
-// ];
-
-
-// const PendingTabledata: TableRow[] = [
-//   { id: 1, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 2, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 3, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 4, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 5, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 6, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 7, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 8, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 9, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"},
-//   { id: 10, AccountNumber: "0045776341", CustomerName: "Goodluck Steohen", SubmissionDate: "11/14/2024 10:27:43", Category: "Card Dispute", status: "Pending"}
-// ];
-
-
-
-
-// const itemsPerPage = 4;
-
-// interface PendingData {
-//   id: number;
-//   AccountNumber: string;
-//   CustomerName: string;
-//   SubmissionDate: string;
-//   Category: string;
-//   status: "Pending" | "Resolved"; // Restricting status values
-//   extraInfo?: string; // Optional property
-// }
 
 
 
@@ -156,7 +103,7 @@ export default function ComplaintLog() {
         <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll">
         <div className="">
 
-         <div className="complaint__Form___Container pb-2 ">
+         <div className="complaint__Form___Container  w-[470px] mt-[0.2rem] pb-2 ">
            
             <div className="flex gap-11 p-3.5">
 

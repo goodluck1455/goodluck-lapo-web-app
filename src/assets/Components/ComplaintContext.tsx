@@ -18,6 +18,8 @@ interface ComplaintContextType {
   currentPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
   handleDataSwitch: (type: "pending" | "resolved") => void;
+  navbar: boolean;
+  setNavbar: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // Create the context
@@ -62,6 +64,7 @@ export const ComplaintProvider = ({ children }: { children: ReactNode }) => {
   const [selectedData, setSelectedData] = useState<TableRow[]>(PendingTabledata);
   const [activeTab, setActiveTab] = useState<"pending" | "resolved">("pending");
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [navbar, setNavbar] = useState(false);
 
   const handleDataSwitch = (type: "pending" | "resolved") => {
     setSelectedData(type === "pending" ? PendingTabledata : ResolveTabledata);
@@ -70,7 +73,7 @@ export const ComplaintProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <ComplaintContext.Provider value={{ selectedData, activeTab, currentPage, setCurrentPage, handleDataSwitch }}>
+    <ComplaintContext.Provider value={{ selectedData, activeTab, currentPage, setCurrentPage, handleDataSwitch, setNavbar, navbar }}>
       {children}
     </ComplaintContext.Provider>
   );
