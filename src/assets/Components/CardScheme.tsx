@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function CardScheme() {
 const [schemeFormOpen, setSchemeFormOpen] = useState(false)
-    const { profile, editProfile, deleteProfile }= useProfile();
+    const { profile, editProfile, deleteProfile, addProfile}= useProfile();
     //  const navigate = useNavigate()
 
      const {navbar, setNavbar} = useComplaintContext();
@@ -146,7 +146,7 @@ const [schemeFormOpen, setSchemeFormOpen] = useState(false)
 
 
         {schemeFormOpen && (
-        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll ">
+        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll z-20">
         <div className="">
 
          <div className="complaint__Form___Container w-[470px] pb-2 mt-30  z-20 max-sm:w-fit">
@@ -184,7 +184,7 @@ const [schemeFormOpen, setSchemeFormOpen] = useState(false)
 
              
 
-                      <button type="button" className="Form__btn w-[420px] max-sm:w-full text-white font-bold mt-1 cursor-pointer">Add Scheme</button>   
+                      <button type="button" onClick={()=>addProfile} className="Form__btn w-[420px] max-sm:w-full text-white font-bold mt-1 cursor-pointer">Add Scheme</button>   
         
             </form>
               </div>

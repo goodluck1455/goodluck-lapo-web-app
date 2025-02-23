@@ -5,7 +5,7 @@ interface QuickAccessProps {
 
 
 
-// export default function ProjectDisplay({ projectName, projectImage }: ProjectDisplayProps) {
+
 
 
 

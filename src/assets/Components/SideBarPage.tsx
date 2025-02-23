@@ -16,8 +16,10 @@ const showSideBar = ()=>{
 }
 
   return (
-   <div className={`max-[376px]:hidden ${navbar ? "max-sm:block": "max-sm:hidden" } max-sm:absolute  
-   max-xl:z-20 max-sm:delay-300 max-md:hidden `} >
+   <div className={` ${navbar ? "max-sm:block": "max-sm:hidden" } 
+   ${navbar ? "max-md:block": "max-md:hidden" }
+   max-sm:absolute  
+   max-xl:z-20 max-sm:delay-300 max-md:absolute `} >
     <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 scroll-smooth overflow-y-auto scrollbar-hide">
            
            <div className=" SideBar____Container ">
@@ -58,7 +60,7 @@ const showSideBar = ()=>{
                    <NavLink to="CardScheme" onClick={showSideBar}> <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardscheme.png" alt=""  /> Card Scheme</li></NavLink>
                     
-              <NavLink to="/CardProfile">     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
+              <NavLink to="/CardProfile" onClick={showSideBar}>     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardprofile.png" alt=""  />Card Profile</li></NavLink> 
 
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
@@ -76,7 +78,7 @@ const showSideBar = ()=>{
                  
                     onMouseEnter={() => setcomplainLogImag(false)}
                     onMouseLeave={() => setcomplainLogImag(true)}
-                    
+                    onClick={showSideBar}
                     >  <li 
                     
                     
@@ -85,7 +87,7 @@ const showSideBar = ()=>{
                     {complainLogImag ? <img src="/Images/icons/complaintLog.png" alt=""  />: <img src="/Images/icons/complainLogA.png" alt=""  />} 
                     Complaints: log Complaint</li> </NavLink>
 
-                    <NavLink to="complaintResolve" >    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
+                    <NavLink to="complaintResolve" onClick={showSideBar}>    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/complaintResolve.png" alt=""  /> Complaints: Resolve</li> </NavLink>
 
                     <li className="flex gap-3">

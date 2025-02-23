@@ -18,7 +18,7 @@ import QuickAccess from "../ReuseableComponent/QuickAccess";
 
 export default function Dashboard() {
   // const [navbar, setNavbar] = useState(false);
-  const {navbar, setNavbar} = useComplaintContext()
+  const {navbar, setNavbar} = useComplaintContext();
 
   const formattedDate = new Date().toLocaleDateString("en-GB", {
     day: "2-digit",
@@ -43,7 +43,7 @@ export default function Dashboard() {
           <section className="flex justify-between items-center">
           
           <div className="flex gap-2.5 items-center complaint___infoLogo">
-            <div className="hidden max-sm:block max-md:block" onClick={showSideBar}>
+            <div className="cursor-pointer hidden max-sm:block max-md:block" onClick={showSideBar}>
              <FaBarsStaggered />
             </div>
             <div className="max-sm:hidden">

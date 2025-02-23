@@ -8,7 +8,7 @@ import { useComplaintContext } from "./ComplaintContext";
 export default function CreateProfile() {
    const creatNavigat = useNavigate();
 
-
+      
      const {navbar, setNavbar} = useComplaintContext();
 
      const showSideBar = ()=>{
@@ -28,20 +28,22 @@ export default function CreateProfile() {
           
           <section className="flex justify-between items-center">
           
-          <div className="flex gap-2.5 items-center complaint___infoLogo">
-             <span className="cursor-pointer flex gap-2 items-center max-sm:hidden"
+          <div className="flex gap-2.5 items-center complaint___infoLogo max-sm:gap-0.5">
+             <span className="cursor-pointer flex gap-2 items-center "
                onClick={() => creatNavigat("/CardProfile")}
              >
-              <img src="/Images/icons/chevron-left.png" alt="" /> Back
-              <img src="/Images/icons/credit-card-pos.png" alt="" />
-              </span>
-             <span className="flex items-center gap-2 text-[#475467]">
-              <div className="hidden max-xl:block" onClick={showSideBar}>
+              <div className="hidden max-xl:block max-sm:hidden" onClick={showSideBar}>
                                        <FaBarsStaggered />
                                       </div>
-              <img src="/Images/icons/chevron-right.png" alt="" className="max-sm:hidden" />
+              <img src="/Images/icons/chevron-left.png" alt="" className="max-sm:mr-[-0.3rem]" />Back
+              <img src="/Images/icons/credit-card-pos.png" alt="" className=""/>
+              </span>
+             <span className="flex items-center gap-2 text-[#475467]">
+              
+              <img src="/Images/icons/chevron-right.png" alt="" />
               Card Profile
-              <img src="/Images/icons/chevron-right.png" alt="" /></span>
+              <img src="/Images/icons/chevron-right.png" alt="" className="" />
+              {/* <img src="/Images/icons/chevron-right.png" alt=""  />  */}</span>
              <span className="font-bold text-[#001735] max-sm:hidden">Create Profile</span>
           
           </div>
@@ -72,9 +74,9 @@ export default function CreateProfile() {
         <section className="ml-[1rem] mr-[1rem]">
           <div className="  pb-[2rem] h-auto w-full bg-[#FFFFFF] border-[#E2E2E2] border rounded-[10px]">
 
-            <form action="" className="max-xl:w-fit">
+            <form action="" className="max-xl:w-fit max-md:w-full">
                 <div>
-                  <h2 className="text-[#121212] text-[20px] font-normal pt-2.5 ml-10">Profile Details</h2>
+                  <h2 className="text-[#121212] text-[20px] font-normal pt-2.5 ml-10 max-md:ml-2">Profile Details</h2>
                 </div>
 
 
@@ -82,7 +84,8 @@ export default function CreateProfile() {
                 <div>
                   <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
                   <label htmlFor="">Card Name *</label> <br />
-                  <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] mt-2 outline-none max-sm:w-full"/>
+                  <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm 
+                  w-[448px] max-xl:w-[308px] mt-2 outline-none max-sm:w-full max-md:w-full"/>
                   </div>
 
                   <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
