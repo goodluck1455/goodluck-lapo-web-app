@@ -55,9 +55,9 @@ const Chart = () => {
         if (window.innerWidth <= 640) {
           setBarGap(10); // Small screens (Mobile)
         } else if (window.innerWidth <= 1024) {
-          setBarGap(15); // Medium screens (Tablets)
+          setBarGap(18); // Medium screens (Tablets)
         } else {
-          setBarGap(13); // Large screens (Desktop)
+          setBarGap(18); // Large screens (Desktop)
         }
       };
   
