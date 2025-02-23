@@ -43,7 +43,7 @@ export default function Dashboard() {
           <section className="flex justify-between items-center">
           
           <div className="flex gap-2.5 items-center complaint___infoLogo">
-            <div className="hidden max-sm:block" onClick={showSideBar}>
+            <div className="hidden max-sm:block max-md:block" onClick={showSideBar}>
              <FaBarsStaggered />
             </div>
             <div className="max-sm:hidden">

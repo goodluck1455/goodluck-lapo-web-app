@@ -16,7 +16,8 @@ const showSideBar = ()=>{
 }
 
   return (
-   <div className={`max-[376px]:hidden ${navbar ? "max-sm:block": "max-sm:hidden" } max-sm:absolute  max-xl:z-20 max-sm:delay-300  `} >
+   <div className={`max-[376px]:hidden ${navbar ? "max-sm:block": "max-sm:hidden" } max-sm:absolute  
+   max-xl:z-20 max-sm:delay-300 max-md:hidden `} >
     <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 scroll-smooth overflow-y-auto scrollbar-hide">
            
            <div className=" SideBar____Container ">
@@ -26,7 +27,7 @@ const showSideBar = ()=>{
                 <img src="/Images/Lapo-logo.png" alt="" className="z-20" /> 
                 <IoMdClose 
                 onClick={showSideBar}
-                size={30} className="hidden max-xl:block text-white font-bold absolute top-0.5 right-2.5" />
+                size={30} className="hidden max-xl:block  text-white font-bold absolute top-0.5 right-2.5" />
              </div>
 
              <NavLink to="/"> 
