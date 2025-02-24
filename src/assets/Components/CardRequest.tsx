@@ -97,24 +97,24 @@ const [schemeFormOpen, setSchemeFormOpen] = useState(false)
             <table className="w-full border-collapse rounded-lg border border-gray-300">
   <thead className="bg-[#F9FAFB] rounded-t-lg">
     <tr className=" text-[#475467] text-center">
-      <th className="border border-gray-300 px-4 py-2 h-10 font-medium text-sm">Card Name</th>
-      <th className="border border-gray-300 px-4 py-2 font-medium text-sm">Currency</th>
-      <th className="border border-gray-300 px-4 py-2 font-medium text-sm">Expiration</th>
-      <th className="border border-gray-300 px-4 py-2 font-medium text-sm">Bin Prefix</th>
-      <th className="border border-gray-300 px-4 py-2 font-medium text-sm">Date Created</th>
-      <th className="border border-gray-300 px-4 py-2 font-medium text-sm">Action</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 h-10 font-medium text-sm">Card Name</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 font-medium text-sm">Currency</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 font-medium text-sm">Expiration</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 font-medium text-sm">Bin Prefix</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 font-medium text-sm">Date Created</th>
+      <th className="border border-gray-300 px-4 py-2 max-sm:py-0 font-medium text-sm">Action</th>
     </tr>
   </thead>
   <tbody className="rounded-b-lg ">
     {profile.map((data)=>{
         return(
       <tr className="bg-[#FFFFFF] text-[#475467] h-10 text-center font-light text-[14px] text-sm" key={data.id} >
-      <td className="border border-gray-300 px-4 py-2">{data.CardName}</td>
-      <td className="border border-gray-300 px-4 py-2">{data.Currency}</td>
-      <td className="border border-gray-300 px-4 py-2">{data.Expiration}</td>
-      <td className="border border-gray-300 px-4 py-2">{data.BinPrefix}</td>
-      <td className="border border-gray-300 px-4 py-2">{data.DateCreated}</td>
-      <td className="border border-gray-300 px-4 py-2">
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">{data.CardName}</td>
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">{data.Currency}</td>
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">{data.Expiration}</td>
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">{data.BinPrefix}</td>
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">{data.DateCreated}</td>
+      <td className="border border-gray-300 max-sm:py-0 px-4 py-2">
         <div className="flex justify-center">
           <span 
           onClick={() => deleteProfile(data.id)}

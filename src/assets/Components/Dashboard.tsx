@@ -34,9 +34,11 @@ export default function Dashboard() {
 
 
   return (
-    <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide bg-[#F1F7FF] ">
+    <div className="w-screen complaintRe____header-body h-screen   scroll-smooth   scrollbar-hide bg-[#F1F7FF] ">
          
+        <div className="overflow-y-auto scrollbar-hide h-screen">
 
+              <div className="sticky top-0 z-10">
          <section className="bg-white">
         <div className="complaint___container">
           
@@ -83,6 +85,7 @@ export default function Dashboard() {
         </div>
 
         </section>
+        </div>
 
 
         <main className="complaint___container  MediaWidth__A pt-1.5 ">
@@ -184,7 +187,7 @@ export default function Dashboard() {
         </main>
 
 
-
+        </div>
     </div>
   )
 }

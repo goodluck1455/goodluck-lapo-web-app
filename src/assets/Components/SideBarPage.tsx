@@ -20,7 +20,7 @@ const showSideBar = ()=>{
    ${navbar ? "max-md:block": "max-md:hidden" }
    max-sm:absolute max-sm:z-50
    max-xl:z-20 max-sm:delay-300 max-md:absolute `} >
-    <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 scroll-smooth overflow-y-auto scrollbar-hide">
+    <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 h-screen scroll-smooth overflow-y-auto scrollbar-hide">
            
            <div className=" SideBar____Container ">
 
