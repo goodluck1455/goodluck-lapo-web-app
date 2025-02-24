@@ -104,10 +104,10 @@ export default function ComplaintLog() {
 
         </section>
         {formOpen && (
-        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll">
+        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll max-sm:z-40">
         <div className="">
 
-         <div className="complaint__Form___Container  w-[470px] mt-[0.2rem] pb-2 ">
+         <div className="complaint__Form___Container  w-[470px] max-sm:w-[320px] max-sm:m-1 mt-[0.2rem] pb-2 max-sm:z-20 ">
            
             <div className="flex gap-11 p-3.5">
 
@@ -130,23 +130,23 @@ export default function ComplaintLog() {
               <div className="ml-6 mr-6">
               <form action="">
               <label htmlFor="" className="form__label text-[#344054]">Category</label> <br />
-              <select name="" id=""  className="mt-1  mb-3 complaine__FormInput text-[#344054] pl-3"> 
+              <select name="" id=""  className="mt-1  mb-3 complaine__FormInput w-full text-[#344054] pl-3"> 
                 <option value="">Select category from dropdown</option>
                 <option value=""></option>
               </select><br />
 
               <label htmlFor="" className="text-[#344054">Account Number*</label> <br />
-              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3" placeholder="0123456789"/><br />
+              <input type="text" className="mt-1 complaine__FormInput w-full pl-4 mb-3" placeholder="0123456789"/><br />
 
               <label htmlFor="" className="text-[#344054">Customer Name*</label> <br />
-              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3 bg-[#F5F5F7] font-bold" placeholder="Nazeer Ajibola"/> <br />
+              <input type="text" className="mt-1 complaine__FormInput w-full pl-4 mb-3 bg-[#F5F5F7] font-bold" placeholder="Nazeer Ajibola"/> <br />
 
               <label htmlFor="text" className='text-[#344054]'>Complaint Details*</label> <br />
-                    <textarea name="message" placeholder='Describe complaint....' className='resize-none complaine__FormInputTextArea pl-3 pt-3'>
+                    <textarea name="message" placeholder='Describe complaint....' className='resize-none complaine__FormInput w-full TextArea pl-3 pt-3'>
                     </textarea>
 
                     <label htmlFor="" className="text-[#344054">Upload File (optional)</label> <br />
-                    <div className="File__upload flex flex-col justify-center items-center text-center cursor-pointer">
+                    <div className="File__upload w-[420px] max-sm:w-fit flex flex-col justify-center items-center text-center cursor-pointer">
                       <span>
                         <img src="/Images/icons/downloadIcon.png" alt="" />
                       </span>

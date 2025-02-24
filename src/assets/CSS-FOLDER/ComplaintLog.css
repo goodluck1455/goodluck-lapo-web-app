@@ -207,7 +207,7 @@ border-radius: 12px;
   }
 
   .File__upload{
-    width: 420px;
+    /* width: 420px; */
      height: 126px;
     border: 1px dashed #D0D5DD;
     border-radius: 12px;
