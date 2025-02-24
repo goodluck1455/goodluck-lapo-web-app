@@ -13,7 +13,8 @@ const data = [
 const renderLegend = (props:any) => {
   const { payload } = props;
   return (
-    <div className="flex flex-wrap justify-center gap-4 mt-4 ">
+    <div className="flex flex-wrap justify-center gap-4 mt-4 max-sm:gap-2 
+    max-sm:absolute max-sm:grid max-sm:grid-cols-2 max-sm:ml-10">
       {payload.map((entry:any, index:any) => (
         <div key={index} className="inline-flex items-center gap-2">
           {/* Small Rounded Indicator */}
@@ -33,7 +34,7 @@ const renderLegend = (props:any) => {
 
 const CustomPieChart = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center max-sm:flex-wrap mt-18">
+    <div className="flex flex-wrap items-center justify-center max-sm:flex-col mt-18 max-sm:mt-4">
       <div className="relative w-[200px] h-[200px]">
         {/* Pie Chart */}
         <PieChart width={400} height={230} style={{ marginLeft: "-6.2rem"}}>
@@ -47,13 +48,13 @@ const CustomPieChart = () => {
             dataKey="value"
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.color}  className="max-sm:flex-wrap"/>
+              <Cell key={`cell-${index}`} fill={entry.color}  className=""/>
             ))}
           </Pie>
           <Tooltip />
-          <Legend content={renderLegend} />
+          <Legend content={renderLegend} className=""/>
         </PieChart>
-
+       
         {/* Centered Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <p className="text-gray-600 text-sm font-semibold">Total Cards</p>
