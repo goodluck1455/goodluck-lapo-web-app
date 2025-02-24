@@ -32,7 +32,7 @@ const showSideBar = ()=>{
                 size={30} className="hidden max-xl:block max-lg:block text-white font-bold absolute top-0.5 right-2.5" />
              </div>
 
-             <NavLink to="/"> 
+             <NavLink to="/" onClick={showSideBar}> 
              <div className="flex gap-3 text-[#D0D5DD] Sidebar__dashbaoard items-center cursor-pointer">
               <div className="">
               <img src="/Images/dashboarLogo.png" alt="" className="font-bold" /> 
@@ -63,8 +63,9 @@ const showSideBar = ()=>{
               <NavLink to="/CardProfile" onClick={showSideBar}>     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/cardprofile.png" alt=""  />Card Profile</li></NavLink> 
 
+                  <NavLink to="/CardRequest">
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
-                    <img src="/Images/icons/cardrequest.png" alt=""  /> Card Request</li>
+                    <img src="/Images/icons/cardrequest.png" alt=""  /> Card Request</li></NavLink>
 
                     <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     <img src="/Images/icons/stock.png" alt=""  />  Stock Card</li>

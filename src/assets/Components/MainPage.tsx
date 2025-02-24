@@ -9,6 +9,7 @@ import CardProfile from "./CardProfile";
 import CreateProfile from "./CreateProfile";
 import CardScheme from "./CardScheme";
 import Dashboard from "./Dashboard";
+import CardRequest from "./CardRequest";
 // import User from "./User";
 // import Table from "./Table";
 // import { Outlet } from "react-router-dom";
@@ -30,6 +31,7 @@ export default function MainPage() {
           <Route path="CreateProfile" element={<CreateProfile />} />
           <Route path="CardScheme" element={<CardScheme />} />
           <Route path="complaintResolve" element={<ComplaintResolve/>} />
+          <Route path="CardRequest" element={<CardRequest />} />
         </Routes>
       
     

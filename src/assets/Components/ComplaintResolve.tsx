@@ -2,13 +2,22 @@
 import "../CSS-FOLDER/ComplaintLog.css"
 import { useComplaintContext } from "./ComplaintContext"
 import Table from "./Table"
-
+import { FaBarsStaggered } from "react-icons/fa6";
 
 
 
 
 export default function ComplaintResolve() {
+
   const { activeTab,  handleDataSwitch } = useComplaintContext()
+
+  const {navbar, setNavbar} = useComplaintContext();
+
+  const showSideBar = ()=>{
+
+   setNavbar(!navbar)
+   // setIsOpen(!isOpen);
+}
     return (
         <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide ">
         
@@ -19,6 +28,9 @@ export default function ComplaintResolve() {
             <section className="flex justify-between items-center">
             
             <div className="flex gap-2.5 items-center complaint___infoLogo">
+               <div className="hidden max-sm:block max-lg:block" onClick={showSideBar}>
+                                       <FaBarsStaggered />
+                                      </div>
               <div>
               <img src="/Images/icons/resolveLogo.png" alt="" /> 
               </div>

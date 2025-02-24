@@ -37,7 +37,7 @@ export default function ComplaintLog() {
           <section className="flex justify-between items-center">
           
           <div className="flex gap-2.5 items-center complaint___infoLogo">
-             <div className="hidden max-sm:block" onClick={showSideBar}>
+             <div className="hidden max-sm:block max-lg:block" onClick={showSideBar}>
                                      <FaBarsStaggered />
                                     </div>
 
@@ -108,10 +108,10 @@ export default function ComplaintLog() {
 
         </section>
         {formOpen && (
-        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll max-sm:z-40">
+        <div  className="fixed inset-0 flex z-20 justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll max-sm:z-40">
         <div className="">
 
-         <div className="complaint__Form___Container  w-[470px] max-sm:w-[320px] max-sm:m-1 mt-[0.2rem] pb-2 max-sm:z-20 ">
+         <div className="complaint__Form___Container  w-[470px] max-sm:w-[320px] max-sm:m-1 mt-[1rem] pb-2 max-sm:z-20 ">
            
             <div className="flex gap-11 p-3.5">
 

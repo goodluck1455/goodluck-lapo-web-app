@@ -36,7 +36,7 @@ export default function CreateProfile() {
              <span className="cursor-pointer flex gap-2 items-center "
                onClick={() => creatNavigat("/CardProfile")}
              >
-              <div className="hidden max-xl:block max-sm:hidden" onClick={showSideBar}>
+              <div className="hidden max-xl:hidden max-sm:hidden" onClick={showSideBar}>
                                        <FaBarsStaggered />
                                       </div>
               <img src="/Images/icons/chevron-left.png" alt="" className="max-sm:mr-[-0.3rem]" />Back
@@ -82,31 +82,31 @@ export default function CreateProfile() {
 
             <form action="" className="max-xl:w-fit max-md:w-full">
                 <div>
-                  <h2 className="text-[#121212] text-[20px] font-normal pt-2.5 ml-10 max-md:ml-2">Profile Details</h2>
+                  <h2 className="text-[#121212] text-[20px] font-normal pt-2.5 ml-10 max-md:ml-2 max-lg:ml-4">Profile Details</h2>
                 </div>
 
 
                       <div className="flex gap-10 max-sm:flex-col max-xl:gap-1">
                 <div>
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Card Name *</label> <br />
                   <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm 
                   w-[448px] max-xl:w-[308px] mt-2 outline-none max-sm:w-full max-md:w-full"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Card Scheme*</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-full max-xl:w-[308px] max-sm:w-full  mt-2 outline-none">
                     <option value="">Verse</option>
                   </select>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Description</label> <br />
                   <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Branch Blacklist</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none">
                     <option value="Head Office" className="text-[#667085]">Head Office</option>
@@ -117,17 +117,17 @@ export default function CreateProfile() {
                 </div>
 
                       <div>
-                      <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1">
+                      <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1 max-lg:ml-4">
                   <label htmlFor="">Bin Prefix*</label> <br />
                   <input type="text"  placeholder="00000000" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1 max-lg:ml-4">
                   <label htmlFor="">Expiration *</label> <br />
                   <input type="number"  placeholder="0" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Currency *</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none">
                     <option value="">NGN</option>

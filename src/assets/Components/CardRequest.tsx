@@ -58,7 +58,7 @@ const [schemeFormOpen, setSchemeFormOpen] = useState(false)
 
         <section className="complaint___container">
         <div className="complaint___logTitle">
-          <h1 className="font-bold ">Card Scheme</h1>
+          <h1 className="font-bold ">Card Request</h1>
           <p className="text-[#475467] text-[14px]">Add, view and edit card schemes here..</p>
         </div>
 
