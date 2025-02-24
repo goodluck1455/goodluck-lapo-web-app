@@ -55,14 +55,14 @@ export default function Dashboard() {
           
           </div>
 
-          <div className="flex gap-7 items-center p-[8px] max-sm:gap-1 max-sm:p-[3px]">
+          <div className="flex gap-7 items-center p-[8px] max-sm:gap-2 max-sm:p-[5px]">
             <span>
             <div className="flex items-center gap-1.5 table___searchBar cursor-pointer">
-          <span className="searcgBAR__Dasbord absolute top-4 z-10 w-[1.8rem] ml-3 "> 
+          <span className="searcgBAR__Dasbord absolute top-4 z-10 w-[1.8rem] ml-3 max-sm:top-3.5"> 
           <img src="/Images/icons/search-sm.png" alt="" className="w-[1rem]" />
           </span>
           <span>
-          <input className="bg-[#FFFFFF] Dashboard__input__search outline-none 
+          <input className="bg-[#FFFFFF] Dashboard__input__search outline-none max-sm:pt-1 
           border-[#D0D5DD] border-[0.979916px] rounded-[97.9916px]" type="text"  placeholder="Search"/>
           </span>
         </div>
