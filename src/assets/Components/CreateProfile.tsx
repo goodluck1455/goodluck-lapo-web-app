@@ -24,7 +24,9 @@ export default function CreateProfile() {
   return (
     <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide max-xl:w-full">
 
+<div className="overflow-y-auto scrollbar-hide h-screen">
 
+      <div className="sticky top-0 z-10">
       <section className="bg-white">
         <div className="complaint___container ">
           
@@ -65,6 +67,8 @@ export default function CreateProfile() {
         </div>
 
         </section>
+
+        </div>
 
         <section className="complaint___container">
         <div className="complaint___logTitle">
@@ -271,7 +275,7 @@ export default function CreateProfile() {
         </section>
 
 
-
+        </div>
     </div>
   )
 }

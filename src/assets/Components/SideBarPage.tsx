@@ -17,9 +17,9 @@ const showSideBar = ()=>{
 
   return (
    <div className={` ${navbar ? "max-sm:block": "max-sm:hidden" } 
-   ${navbar ? "max-md:block": "max-md:hidden" }
-   max-sm:absolute max-sm:z-50
-   max-xl:z-20 max-sm:delay-300 max-md:absolute `} >
+   ${navbar ? "max-md:block": "max-md:hidden" }  ${navbar ? "max-lg:block": "max-lg:hidden" }
+   max-sm:absolute max-sm:z-50 max-lg:absolute
+   max-xl:z-20  max-md:absolute `} >
     <div className="SideBar___body bg-[#002F6C] max-lg:w-[270px]  top-0 left-0 h-screen scroll-smooth overflow-y-auto scrollbar-hide">
            
            <div className=" SideBar____Container ">
@@ -29,7 +29,7 @@ const showSideBar = ()=>{
                 <img src="/Images/Lapo-logo.png" alt="" className="z-20" /> 
                 <IoMdClose 
                 onClick={showSideBar}
-                size={30} className="hidden max-xl:block  text-white font-bold absolute top-0.5 right-2.5" />
+                size={30} className="hidden max-xl:block max-lg:block text-white font-bold absolute top-0.5 right-2.5" />
              </div>
 
              <NavLink to="/"> 
@@ -76,15 +76,15 @@ const showSideBar = ()=>{
                 
                     <NavLink to="ComplaintLog" 
                  
-                    onMouseEnter={() => setcomplainLogImag(false)}
-                    onMouseLeave={() => setcomplainLogImag(true)}
+                    onMouseEnter={() => setcomplainLogImag(true)}
+                    onMouseLeave={() => setcomplainLogImag(false)}
                     onClick={showSideBar}
                     >  <li 
                     
                     
                     className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
                     
-                    {complainLogImag ? <img src="/Images/icons/complaintLog.png" alt=""  />: <img src="/Images/icons/complainLogA.png" alt=""  />} 
+                    {complainLogImag ? <img src="/Images/icons/complainLogA.png" alt=""  /> : <img src="/Images/icons/complaintLog.png" alt=""  /> } 
                     Complaints: log Complaint</li> </NavLink>
 
                     <NavLink to="complaintResolve" onClick={showSideBar}>    <li className="flex gap-3 hover:bg-[#E4F0FF] hover:text-[#014DAF]"> 
