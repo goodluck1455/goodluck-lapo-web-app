@@ -111,12 +111,13 @@ export default function Dashboard() {
 
 
           <section>
-            <div className="Dashboarb__quickAccess h-[106px] w-full max-sm:h-auto max-sm:pb-2">
+            <div className="Dashboarb__quickAccess h-[106px] w-full max-sm:h-auto max-sm:pb-2 max-md:h-auto max-lg:pb-4 max-lg:h-auto">
               <h2 className="pt-3 pl-3 font-medium ml-4 max-sm:ml-0.5 max-sm:pl-1 max-xl:ml-0.5">Your Quick Access</h2>
 
 
 
-              <div className="ml-5 max-sm:ml-1 max-xl:ml-1 mt-3 grid grid-cols-4 gap-2.5  mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-2 max-sm:gap-3">
+              <div className="ml-5 max-sm:ml-1 max-xl:ml-1 mt-3 grid grid-cols-4 gap-2.5  max-lg:grid-cols-2
+              mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-2 max-sm:gap-3 max-md:grid-cols-2 max-md:px-4 max-sm:px-1">
                 
               
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
@@ -138,7 +139,7 @@ export default function Dashboard() {
             </div>
 
 
-                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1">
+                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
                   {/* first board analytics  */}
                    <DasboardAnalytics />
                    <DasboardAnalytics />
@@ -150,7 +151,7 @@ export default function Dashboard() {
 
 
               <section className="mt-3 ">
-                <div className="flex gap-2 max-sm:flex-col">
+                <div className="flex gap-2 max-sm:flex-col max-md:flex-col max-lg:flex-col">
                       <MonthlyIssuan />
 
                   <RecentCardRequest />

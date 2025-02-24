@@ -13,7 +13,7 @@ export default function DasboardAnalytics() {
 
                     <div className="ml-2.5 flex justify-between mt-2 items-center max-sm:ml-1.5 max-sm:gap-1">
                       <div>
-                        <h1 className="text-[#121212] text-[24px] max-xl:text-[16px] font-bold">26,478</h1>
+                        <h1 className="text-[#121212] text-[24px]  font-bold">26,478</h1>
                       </div>
                       <div className="flex gap-2.5 max-xl:gap-1 max-sm:gap-1.5">
 
@@ -23,7 +23,7 @@ export default function DasboardAnalytics() {
                               <GoArrowUpRight className="text-[#29A174]" />
                             </span>
                             <span className="text-[#29A174] ">
-                             <p className=" font-[500] max-xl:text-[0.9rem]">+9%</p> 
+                             <p className=" font-[500] ">+9%</p> 
                             </span>
                           </div>   
                         </div>
