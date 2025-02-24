@@ -2,11 +2,13 @@ import { useNavigate } from "react-router-dom";
 import "../CSS-FOLDER/CreateProfile.css";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useComplaintContext } from "./ComplaintContext";
+import { useState } from "react";
 
 
 
 export default function CreateProfile() {
    const creatNavigat = useNavigate();
+   const [schemeFormOpen, setSchemeFormOpen] = useState(false)
 
       
      const {navbar, setNavbar} = useComplaintContext();
@@ -144,8 +146,127 @@ export default function CreateProfile() {
 
         <section className="ml-[1rem] mr-[1rem] mt-3">
           <div className="h-[262px] bg-[#FFFFFF] w-full border-[#E2E2E2] border rounded-[10px]">
+            <p className="text-[#121212] text-[20px] font-bold pt-2.5 ml-4 max-md:ml-2">Fees</p>
+            <div  
+             onClick={()=>setSchemeFormOpen(true)}
+              className="bg-[#014DAF] complaint__LogComplain ml-4 flex gap-2.5 items-center text-white cursor-pointer ">
+                <span>
+                 +
+                </span>
+                <span>
+              <h2>Add Profile</h2>
+                </span>
+              </div>
+
+              <div className="overflow-x-auto p-2.5">
+            <table className="w-full border-collapse border-l-0 border-r-0  border-t border-b border-gray-300">
+  <thead className="bg-[#F9FAFB] ">
+    <tr className=" text-[#475467] text-center">
+      <th className=" border border-gray-300  h-10 font-medium text-sm">Name</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Value</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Frequency</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Currency</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Time</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Account Pad</th>
+      <th className=" border border-gray-300 px-4 py-2 font-medium text-sm">Account</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+      
+      <tr className="bg-[#FFFFFF] text-[#475467] h-10 text-center font-light text-[14px] text-sm"  >
+      <td className="border border-gray-300 px-4 py-2"></td>
+      <td className="border border-gray-300 px-4 py-2"></td>
+      <td className="border border-gray-300 px-4 py-2"></td>
+      <td className="border border-gray-300 px-4 py-2"></td>
+      <td className="border border-gray-300 px-4 py-2"></td>
+      <td className="border border-gray-300 px-4 py-2"></td>
+    </tr>
+  
+  
+ 
+  
+    
+ 
+  </tbody>
+</table>
+    
+    </div>
+          
+
           
           </div>
+
+          <div  
+            //  onClick={() => navigate("/CreateProfile")}
+              className="bg-[#014DAF] complaint__LogComplain ml-4 flex gap-2.5 items-center text-white cursor-pointer ">
+              
+                <span>
+              <h2>Create Profile</h2>
+                </span>
+              </div>
+
+
+
+              {schemeFormOpen && (
+        <div  className="fixed inset-0 flex justify-center bg-[#64646466]/50 backdrop-blur-md scroll-auto overflow-y-scroll z-20">
+        <div className="">
+
+         <div className="complaint__Form___Container w-[470px] pb-2 mt-30  z-20 max-sm:w-fit">
+           
+            <div className="flex gap-11 p-3.5 justify-between">
+
+          <div className="flex  p-2.5 gap-1.5">
+            <span>
+              <img src="/Images/icons/FormComplain.png" alt="" />
+            </span>
+            <span>
+              <p className="text-[18px] font-bold text-[#101828]">Add Fee</p>
+              <p className="text-[#475467] text-[14px]">Fill in fee details.</p>
+            </span>
+          </div>
+
+          <div onClick={() => setSchemeFormOpen(false)} className="cursor-pointer">
+            <img src="/Images/icons/Button close X.png" alt="" />
+          </div>
+
+            </div>
+
+              <div className="ml-6 max-sm:ml-2 max-sm:mr-2">
+              <form action="">
+
+              <label htmlFor="" className="text-[#344054"> Scheme Name*</label> <br />
+              <input type="text" className="mt-1 complaine__FormInput w-[420px] max-sm:w-full pl-4 mb-3" placeholder="Verse"/><br />
+
+              <label htmlFor="" className="form__label text-[#344054]">PAN Length</label> <br />
+              <input type="number" className="mt-1 complaine__FormInput w-[420px] pl-4 mb-3 max-sm:w-full" placeholder="0"/> <br />
+
+              <label htmlFor="" className="form__label text-[#344054]">Curency</label> <br />
+              <label className="relative cursor-pointer">
+        <input type="radio" name="option" className="hidden peer" />
+        <div className="w-6 h-6 rounded-full border-2 border-gray-300 peer-checked:border-4 peer-checked:border-green-500"></div>
+      </label><br />
+              {/* <select name="" id=""  className="mt-1  mb-3 complaine__FormInput text-[#344054] pl-3">
+                <option value="">Select category from dropdown</option>
+                <option value=""></option>
+              </select> */}
+
+             
+
+                      <button type="button"  className="Form__btn w-[420px] max-sm:w-full text-white font-bold mt-1 cursor-pointer">Add Fee</button>   
+        
+            </form>
+              </div>
+           
+             
+
+
+         </div>
+
+
+              
+              </div>
+            </div>)}
 
         </section>
 

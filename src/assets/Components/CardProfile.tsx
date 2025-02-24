@@ -89,6 +89,8 @@ const navigate = useNavigate();
               <h2>Add Profile</h2>
                 </span>
               </div>
+
+              
             </section>
 
 

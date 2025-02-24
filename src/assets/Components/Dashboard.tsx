@@ -98,8 +98,8 @@ export default function Dashboard() {
            <span className="flex gap-[5px] items-center">
            <span><img src="/Images/icons/dashboarCalendar.png" alt="" /></span>  <h2 className="font-bold">Today</h2> 
             </span> 
-            <span className="flex items-center gap-2">
-           <span className="text-[#D0D5DD]"> |</span>   {formattedDate}
+            <span className="flex items-center gap-1">
+           <span className="text-[#D0D5DD]"> | </span>   {formattedDate}
               </span>       
             </div>
 
