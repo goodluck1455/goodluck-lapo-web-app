@@ -127,19 +127,19 @@ export default function ComplaintLog() {
 
             </div>
 
-              <div className="ml-6">
+              <div className="ml-6 mr-6">
               <form action="">
               <label htmlFor="" className="form__label text-[#344054]">Category</label> <br />
-              <select name="" id=""  className="mt-1  mb-3 complaine__FormInput text-[#344054] pl-3">
+              <select name="" id=""  className="mt-1  mb-3 complaine__FormInput text-[#344054] pl-3"> 
                 <option value="">Select category from dropdown</option>
                 <option value=""></option>
-              </select>
+              </select><br />
 
               <label htmlFor="" className="text-[#344054">Account Number*</label> <br />
-              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3" placeholder="0123456789"/>
+              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3" placeholder="0123456789"/><br />
 
               <label htmlFor="" className="text-[#344054">Customer Name*</label> <br />
-              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3 bg-[#F5F5F7] font-bold" placeholder="Nazeer Ajibola"/>
+              <input type="text" className="mt-1 complaine__FormInput pl-4 mb-3 bg-[#F5F5F7] font-bold" placeholder="Nazeer Ajibola"/> <br />
 
               <label htmlFor="text" className='text-[#344054]'>Complaint Details*</label> <br />
                     <textarea name="message" placeholder='Describe complaint....' className='resize-none complaine__FormInputTextArea pl-3 pt-3'>
@@ -157,7 +157,7 @@ export default function ComplaintLog() {
                       
                       </div>  
 
-                      <button type="button" className="Form__btn text-white font-bold mt-1">Proceed</button>   
+                      <button type="button" className="Form__btn text-white font-bold mt-2 w-full ">Proceed</button>   
         
             </form>
               </div>

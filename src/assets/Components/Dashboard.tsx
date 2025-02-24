@@ -135,7 +135,7 @@ export default function Dashboard() {
             </div>
 
 
-                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-2">
+                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1">
                   {/* first board analytics  */}
                    <DasboardAnalytics />
                    <DasboardAnalytics />
