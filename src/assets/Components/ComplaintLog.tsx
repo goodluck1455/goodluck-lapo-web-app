@@ -4,7 +4,7 @@ import { useComplaintContext } from "./ComplaintContext";
 import Table from "./Table"
 
 import { useState } from "react";
-
+import { FaBarsStaggered } from "react-icons/fa6";
 
 
 
@@ -12,18 +12,18 @@ import { useState } from "react";
 
 
 export default function ComplaintLog() {
-  // const [selectedData, setSelectedData] = useState<TableRow[]>(PendingTabledata);
-  // const [activeTab, setActiveTab] = useState("pending");
-  // const [currentPage, setCurrentPage] = useState(1)
+ 
   const [formOpen, setFormOpen]= useState(false);
 
-  // const handleDataSwitch = (type: "pending" | "resolved") => {
-  //   setSelectedData(type === "pending" ? PendingTabledata : ResolveTabledata);
-  //   setActiveTab(type);
-  //   setCurrentPage(1);
-  // };
 
-  const {  activeTab,   handleDataSwitch } = useComplaintContext();
+  const {  activeTab,   handleDataSwitch, navbar, setNavbar } = useComplaintContext();
+
+
+  const showSideBar = ()=>{
+
+   setNavbar(!navbar)
+   // setIsOpen(!isOpen);
+}
 
   return (
     <div className="w-screen complaintRe____header-body h-screen   scroll-smooth  scrollbar-hide ">
@@ -35,7 +35,11 @@ export default function ComplaintLog() {
           <section className="flex justify-between items-center">
           
           <div className="flex gap-2.5 items-center complaint___infoLogo">
-            <div>
+             <div className="hidden max-sm:block" onClick={showSideBar}>
+                                     <FaBarsStaggered />
+                                    </div>
+
+            <div className="max-sm:hidden">
             <img src="/Images/icons/infoComplaintLog.png" alt="" /> 
             </div>
            <div>
@@ -66,7 +70,7 @@ export default function ComplaintLog() {
           <p className="text-[#475467] text-[14px]">View details of logged complaints and log new ones here.</p>
         </div>
 
-            <section className="flex justify-between">
+            <section className="flex justify-between max-sm:flex-col">
               <div className="flex"> 
             <div className={`complaint__pending ${activeTab === "pending" ? "complaint__pendingActive" : ""}`} 
             onClick={() => handleDataSwitch("pending")}>

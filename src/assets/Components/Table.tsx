@@ -39,37 +39,22 @@ export default function Table() {
 
   return (
     <>
- {/* pending and resolved tab BEGINS here */}
-
-
-
-
-
-
-
-
-     {/* pending and resolved tab ENDS here */}
-
-
-
-
-
 
 
     <div className="table___mainContainer">
       <div className="table___headerSearchBar w-full border border-gray-300">
 
-        <section className="flex justify-between items-center table___searchBar___container">
+        <section className="flex justify-between items-center table___searchBar___container max-sm:flex-col-reverse">
         <div className="flex items-center gap-1.5 table___searchBar cursor-pointer">
-          <span className="searcgBAR__ICON">
-          <img src="/Images/icons/search-sm.png" alt="" />
+          <span className="searcgBAR__ICO absolute pl-[13px] z-20 top-[15.5rem] max-sm:top-97 max-sm:pl-2">
+          <img src="/Images/icons/search-sm.png" alt="" className="max-sm:w-4.5"/>
           </span>
           <span>
           <input className="bg-[#FFFFFF] input__searchBar" type="text"  placeholder="Search complaint"/>
           </span>
         </div>
 
-        <div className="flex gap-2 ">
+        <div className="flex gap-2 max-sm:ml-auto max-sm:mb-5">
           <div className="table___dateSearch flex gap-1 items-center cursor-pointer">
           <span>
             <img src="/Images/icons/dateSearch.png" alt="" />
