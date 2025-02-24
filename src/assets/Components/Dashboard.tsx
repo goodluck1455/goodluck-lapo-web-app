@@ -55,7 +55,7 @@ export default function Dashboard() {
           
           </div>
 
-          <div className="flex gap-7 items-center p-[8px] max-sm:gap-4">
+          <div className="flex gap-7 items-center p-[8px] max-sm:gap-1 max-sm:p-[3px]">
             <span>
             <div className="flex items-center gap-1.5 table___searchBar cursor-pointer">
           <span className="searcgBAR__Dasbord absolute top-4 z-10 w-[1.8rem] ml-3 "> 
