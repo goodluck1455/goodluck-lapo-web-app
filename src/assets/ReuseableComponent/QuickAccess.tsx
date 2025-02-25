@@ -13,7 +13,7 @@ interface QuickAccessProps {
 export default function QuickAccess({image, Name}:QuickAccessProps ) {
   return (
     <>
-      <div className="Dashboard__quickAccesscard  lg:w-full flex items-center gap-1.5 cursor-pointer">
+      <div className="Dashboard__quickAccesscard  lg:w-full flex items-center gap-1.5 cursor-pointer ">
                   <span>
                     <img src={image} alt="" className="ml-4 max-sm:ml-1 max-xl:ml-1 max-md:ml-1"/>
                   </span>

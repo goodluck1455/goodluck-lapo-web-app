@@ -78,7 +78,7 @@ export default function CreateProfile() {
         </section>
 
         <section className="ml-[1rem] mr-[1rem]">
-          <div className="  pb-[2rem] h-auto w-full bg-[#FFFFFF] border-[#E2E2E2] border rounded-[10px]">
+          <div className="  pb-[2rem] h-auto w-full bg-[#FFFFFF] border-[#E2E2E2] border rounded-[10px] ">
 
             <form action="" className="max-xl:w-fit max-md:w-full">
                 <div>
@@ -88,25 +88,25 @@ export default function CreateProfile() {
 
                       <div className="flex gap-10 max-sm:flex-col max-xl:gap-1">
                 <div>
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2 max-xl:ml-4 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Card Name *</label> <br />
                   <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm 
                   w-[448px] max-xl:w-[308px] mt-2 outline-none max-sm:w-full max-md:w-full"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2  max-xl:ml-4 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Card Scheme*</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-full max-xl:w-[308px] max-sm:w-full  mt-2 outline-none">
                     <option value="">Verse</option>
                   </select>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2  max-xl:ml-4 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Description</label> <br />
                   <input type="text"  placeholder="Enter card name" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2  max-xl:ml-4 mr-10 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Branch Blacklist</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none">
                     <option value="Head Office" className="text-[#667085]">Head Office</option>
@@ -117,17 +117,17 @@ export default function CreateProfile() {
                 </div>
 
                       <div>
-                      <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1 max-lg:ml-4">
+                      <div className="ml-10 mt-5 max-sm:ml-2 max-xl:ml-1 mr-10 max-sm:mr-1 max-lg:ml-4">
                   <label htmlFor="">Bin Prefix*</label> <br />
                   <input type="text"  placeholder="00000000" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-1 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-xl:ml-1 max-sm:mr-1 max-lg:ml-4">
                   <label htmlFor="">Expiration *</label> <br />
                   <input type="number"  placeholder="0" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none"/>
                   </div>
 
-                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-sm:mr-2 max-lg:ml-4">
+                  <div className="ml-10 mt-5 max-sm:ml-2 mr-10 max-xl:ml-1 max-sm:mr-2 max-lg:ml-4">
                   <label htmlFor="">Currency *</label> <br />
                   <select name="" id="" className="createProfile__inputeForm w-[448px] max-xl:w-[308px] max-sm:w-full mt-2 outline-none">
                     <option value="">NGN</option>

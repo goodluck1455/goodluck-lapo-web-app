@@ -10,7 +10,7 @@ import RecentCardRequest from "../ReuseableComponent/RecentCardRequest";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useComplaintContext } from "./ComplaintContext";
 import QuickAccess from "../ReuseableComponent/QuickAccess";
-
+import { GoArrowUpRight } from "react-icons/go";
 
 
 
@@ -111,13 +111,13 @@ export default function Dashboard() {
 
 
           <section>
-            <div className="Dashboarb__quickAccess h-[106px] w-full max-sm:h-auto max-sm:pb-2 max-md:h-auto max-lg:pb-4 max-lg:h-auto">
+            <div className="Dashboarb__quickAccess h-[106px] w-full max-sm:h-auto max-sm:pb-2 max-md:h-auto max-lg:pb-4 max-lg:h-auto max-xl:h-auto max-xl:pb-4">
               <h2 className="pt-3 pl-3 font-medium ml-4 max-sm:ml-0.5 max-sm:pl-1 max-xl:ml-0.5">Your Quick Access</h2>
 
 
 
               <div className="ml-5 max-sm:ml-1 max-xl:ml-1 mt-3 grid grid-cols-4 gap-2.5  max-lg:grid-cols-2
-              mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-2 max-sm:gap-3 max-md:grid-cols-2 max-md:px-4 max-sm:px-1">
+              mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-2 max-sm:gap-3 max-md:grid-cols-2 max-md:px-4 max-sm:px-1 max-xl:grid-cols-2">
                 
               
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
@@ -139,19 +139,19 @@ export default function Dashboard() {
             </div>
 
 
-                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
+                <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2 max-xl:grid-cols-2">
                   {/* first board analytics  */}
-                   <DasboardAnalytics />
-                   <DasboardAnalytics />
-                   <DasboardAnalytics />
-                   <DasboardAnalytics />
+                   <DasboardAnalytics TypeOfCard={"Total Active Cards"} AnalyticAmount={"26,478"} MText={"this month"} Percentage={"+9%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />} attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
+                   <DasboardAnalytics TypeOfCard={"Total Personalized Cards"} AnalyticAmount={"15,703"} MText={"this month"}Percentage={"+8.5%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"} />
+                   <DasboardAnalytics  TypeOfCard={"Today’s Revenue"} AnalyticAmount={"₦9.3M "} MText={"this month"} Percentage={"+6%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
+                   <DasboardAnalytics  TypeOfCard={"Pending Requests"}  AnalyticAmount={"38"}MText={""} Percentage={""} PercentageIcon={< ></>} attention={"Requires attention"} CSSAttribute={"hidden"} HideDiv={""}/>
                 </div>
 
               </section>
 
 
               <section className="mt-3 ">
-                <div className="flex gap-2 max-sm:flex-col max-md:flex-col max-lg:flex-col">
+                <div className="flex gap-2 max-sm:flex-col max-md:flex-col max-lg:flex-col max-xl:flex-col">
                       <MonthlyIssuan />
 
                   <RecentCardRequest />
