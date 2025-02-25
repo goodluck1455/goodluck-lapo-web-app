@@ -47,8 +47,8 @@ export default function DasboardAnalytics({TypeOfCard,  AnalyticAmount, Percenta
                           </div>
 
                       </div>
-                      <div className={`pr-4 ${HideDiv}`}>
-                        <p className="text-[#E78020]">{attention}</p>
+                      <div className={`pr-4 flex items-center gap-1 ${HideDiv}`}>
+                     <span><img src="./Images/icons/attentionLogo.png" alt="" /></span>   <p className="text-[#E78020]">{attention}</p>
                       </div>
 
                     </div>
