@@ -10,17 +10,18 @@ interface DasboardAnalyticsProps{
   attention:string;
   CSSAttribute:string;
   HideDiv:string;
+  ImageLogo:string
 }
 
 
-export default function DasboardAnalytics({TypeOfCard,  AnalyticAmount, Percentage, MText, PercentageIcon, attention, CSSAttribute, HideDiv}:DasboardAnalyticsProps) {
+export default function DasboardAnalytics({TypeOfCard, ImageLogo, AnalyticAmount, Percentage, MText, PercentageIcon, attention, CSSAttribute, HideDiv}:DasboardAnalyticsProps) {
   return (
     <>
         <div className="dashboard__analytics h-[110px] w-full
                   bg-[#FFFFFF] border-[#E2E2E2] rounded-[10px] border">
 
                     <div className="mt-2.5 ml-2.5">
-                      <img src="/Images/icons/dashboardActiveCard.png" alt="" />
+                      <img src={ImageLogo} alt="" loading="lazy" />
                       <h2 className="mt-2 text-[rgba(0, 0, 0, 0.560784)]"> {TypeOfCard}</h2>
                     </div>
 

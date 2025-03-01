@@ -141,10 +141,10 @@ export default function Dashboard() {
 
                 <div className="mt-2 grid grid-cols-4 gap-2.5 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2 max-xl:grid-cols-2">
                   {/* first board analytics  */}
-                   <DasboardAnalytics TypeOfCard={"Total Active Cards"} AnalyticAmount={"26,478"} MText={"this month"} Percentage={"+9%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />} attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
-                   <DasboardAnalytics TypeOfCard={"Total Personalized Cards"} AnalyticAmount={"15,703"} MText={"this month"}Percentage={"+8.5%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"} />
-                   <DasboardAnalytics  TypeOfCard={"Today’s Revenue"} AnalyticAmount={"₦9.3M "} MText={"vs yesterday"} Percentage={"+6%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
-                   <DasboardAnalytics  TypeOfCard={"Pending Requests"}  AnalyticAmount={"38"}MText={""} Percentage={""} PercentageIcon={< ></>} attention={"Requires attention"} CSSAttribute={"hidden"} HideDiv={""}/>
+                   <DasboardAnalytics TypeOfCard={"Total Active Cards"} AnalyticAmount={"26,478"} MText={"this month"} Percentage={"+9%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />} attention={""} CSSAttribute={""} HideDiv={"hidden"} ImageLogo={"/Images/icons/dashboardActiveCard.png"}/>
+                   <DasboardAnalytics TypeOfCard={"Total Personalized Cards"} AnalyticAmount={"15,703"} MText={"this month"}Percentage={"+8.5%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"}   ImageLogo={"/Images/icons/dashboardActiveCard.png"} />
+                   <DasboardAnalytics  TypeOfCard={"Today’s Revenue"} AnalyticAmount={"₦9.3M "} MText={"vs yesterday"} Percentage={"+6%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"} ImageLogo={"/Images/icons/revenue.png"}/>
+                   <DasboardAnalytics  TypeOfCard={"Pending Requests"}  AnalyticAmount={"38"}MText={""} Percentage={""} PercentageIcon={< ></>} attention={"Requires attention"} CSSAttribute={"hidden"} HideDiv={""} ImageLogo={"/Images/icons/pendingRequest.png"}/>
                 </div>
 
               </section>
