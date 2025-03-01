@@ -120,10 +120,10 @@ export default function Dashboard() {
               mr-5 max-sm:mr-1 max-xl:mr-1 max-sm:grid-cols-1 max-sm:gap-3 max-md:grid-cols-2 max-md:px-4 max-sm:px-1 max-xl:grid-cols-2">
                 
               
-                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
-                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
-                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
                 <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Manage a Card"}/>
+                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Instant Card"}/>
+                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Issue Personalized Card"}/>
+                <QuickAccess image={"/Images/icons/DasboarMcard.png"} Name={"Review Card Request"}/>
 
                 
 
@@ -161,21 +161,7 @@ export default function Dashboard() {
               </section>
 
 
-              <section>
-
-                {/* <CustomPieChart /> */}
-                <div className="flex gap-2">
-
-
-                
-
-                   
-
-
-
-                </div>
              
-              </section>
             
 
               
