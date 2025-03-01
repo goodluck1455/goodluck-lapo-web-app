@@ -143,7 +143,7 @@ export default function Dashboard() {
                   {/* first board analytics  */}
                    <DasboardAnalytics TypeOfCard={"Total Active Cards"} AnalyticAmount={"26,478"} MText={"this month"} Percentage={"+9%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />} attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
                    <DasboardAnalytics TypeOfCard={"Total Personalized Cards"} AnalyticAmount={"15,703"} MText={"this month"}Percentage={"+8.5%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"} />
-                   <DasboardAnalytics  TypeOfCard={"Today’s Revenue"} AnalyticAmount={"₦9.3M "} MText={"this month"} Percentage={"+6%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
+                   <DasboardAnalytics  TypeOfCard={"Today’s Revenue"} AnalyticAmount={"₦9.3M "} MText={"vs yesterday"} Percentage={"+6%"} PercentageIcon={<GoArrowUpRight className="text-[#29A174]" />}  attention={""} CSSAttribute={""} HideDiv={"hidden"}/>
                    <DasboardAnalytics  TypeOfCard={"Pending Requests"}  AnalyticAmount={"38"}MText={""} Percentage={""} PercentageIcon={< ></>} attention={"Requires attention"} CSSAttribute={"hidden"} HideDiv={""}/>
                 </div>
 
